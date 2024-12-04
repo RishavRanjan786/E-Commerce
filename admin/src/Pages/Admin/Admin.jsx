@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./Admin.css";
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import { Route, Routes } from 'react-router-dom';
@@ -10,8 +10,8 @@ const Admin = () => {
         <div className='admin'>
             <Sidebar />
             <Routes>
-                <Route path='/addproduct' element={<AddProduct />} />
-                <Route path='/listproduct' element={<ListProduct />} />
+                <Route path='/admin/addproduct' element={<AddProduct />} />
+                <Route path='/admin/listproduct' element={<ListProduct />} />
             </Routes>
         </div>
     )
